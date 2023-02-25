@@ -1,0 +1,44 @@
+body{
+    background-color: lightgray;
+    text-align: center;
+}
+.box{
+    display: inline-block;
+    top: 100px;
+    position: relative;
+    font-size: xx-large;
+    color: black;
+}
+@media screen and (min-width:1000px){
+    .box{
+        width: 24%;
+        height: 250px;
+    }
+}
+@media screen and (min-width:751px) and (max-width:999px) {
+    .box{
+        width: 49%;
+        height: 250px;
+    }
+}
+@media screen and (max-width:750px) {
+    .box{
+        width: 97%;
+        height: 250px;
+        top: 50px;
+    }
+}
+
+
+#b1{
+    background-color: rgb(128, 128, 128);
+}
+#b2{
+    background-color: rgb(128, 128, 128, 0.95);
+}
+#b3{
+    background-color: rgb(128, 128, 128, 0.90);
+}
+#b4{
+    background-color: rgb(128, 128, 128, 0.85);
+}

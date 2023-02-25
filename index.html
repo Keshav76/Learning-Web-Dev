@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Keshav Banka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <style>
+        h2 {
+            color: aqua;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="color: rgb(69, 94, 32); text-align: center;">Hello&lowbar;Keshav</h1>
+    <h2>Hello&lt;h2&gt;</h2>
+    <h3>Hello</h3>
+    <h4>Hello&copy;</h4>
+    <h5>Hello</h5>
+    <h6>Hello</h6>
+    <hr>
+    <!-- This is comment -->
+    <p id="summary">My Name is Keshav Banka, I am a BTech 1st year student.<br> I am learning C++ and have just started
+        HTML</p>
+    <hr>
+    <p>10<sup>2</sup><sub>3</sub></p>
+    <hr>
+    <ol type="a">
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+    </ol>
+    <hr>
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+
+    </ul>
+
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, odio eaque. <br> Dolores quasi nam earum dolorem aliquid temporibus, odit distinctio repellendus. Eligendi reprehenderit id consectetur iste voluptatibus ipsam a ex eius magni! <br> Dignissimos, assumenda. Corrupti temporibus iste eveniet sit fugit distinctio nostrum quas. Possimus maxime quibusdam voluptates? Corrupti quaerat, maxime beatae repudiandae laborum culpa aut aliquam ab, <br> harum iste ea veniam neque excepturi libero ullam voluptate fugit rerum praesentium? Expedita nihil molestias suscipit odio explicabo magni ipsa! Ea consequuntur esse et officiis eum aliquam beatae corporis ipsa culpa iure blanditiis sint, quaerat veritatis non eveniet dolore ad voluptatum recusandae vero.</p>
+
+    <a href="http://google.com" target="_blank">Google</a>
+    <hr>
+    <a href="1st.html" target="_blank">HOME</a>
+    <hr>
+    <a href="../C++/Back Tracking/N-QueenProblem.cpp" target="_blank">Game</a>
+    <hr>
+    <a href="../../School Studies/Chemistry/Organic Chemistry 11.pdf" target="_blank">Organic Chemistry 11</a>
+    <hr>
+    <img src="../Python/img.jpg" alt="File Not Found" width="500">
+    <hr>
+    <video src="../../Old Memories/VID-20190131-WA0002.mp4" width="250" controls loop muted autoplay
+        poster="../Python/img.jpg"></video>
+    <hr>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2QR11oDukn4" title="YouTube video player"
+        frameborder="1" allow=" autoplay; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+    <table align="centre">
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Internal</th>
+                <th>Total</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--has no effect -->
+            <tr>
+                <td>English</td>
+                <td>76</td>
+                <td>18</td>
+                <td>94</td>
+                <td>A1</td>
+            </tr>
+            <tr>
+                <td>Maths</td>
+                <td>68</td>
+                <td>12</td>
+                <td>80</td>
+                <td>B1</td>
+            </tr>
+            <tr>
+                <td>Computer</td>
+                <td>69</td>
+                <td>19</td>
+                <td>88</td>
+                <td>A2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="5">Result = Pass</th>
+        </tfoot>
+    </table>
+
+    <h1>PAYMENT FORM</h1>
+    <hr>
+    <hr>
+    <form action="" method="POST">
+        <h2>Contact Information</h2>
+        <p>Name: <input type="text" name="name" required></p>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                Male <input type="radio" name="gender" checked required>
+                Female <input type="radio" name="gender" required>
+            </p>
+        </fieldset>
+        <p>Address: <textarea name="address" cols="100" rows="2" required></textarea></p>
+        <p>Email: <input type="email" name="email" required></p>
+        <p>Phone Number: <input type="number" name="phone"></p>
+        <hr>
+        <h2>Payment Information</h2>
+        <hr>
+        <p>Card Type:
+            <select name="card_type" required>
+                <option value="">Select a card type</option>
+                <option value="visa">VISA</option>
+                <option value="masterCard">Master Card</option>
+                <option value="rupay">RuPay</option>
+            </select>
+        </p>
+        <p>
+            Card Number: <input type="number" name="cardNumber" required>
+        </p>
+        <p>
+            Expiry Date: <input type="date" name="expiryDate" required>
+        </p>
+        <p>
+            CVV: <input type="password" name="cvv" required>
+        </p>
+        <p>
+            <input type="submit" value="Pay Now">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+
+</html>

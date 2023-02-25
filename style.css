@@ -1,0 +1,54 @@
+a[href = "http://google.com"]:hover{
+    color: red;
+}
+a[href = "http://google.com"]:visited{
+    color: green;
+}
+#summary::first-line
+{
+    color: blueviolet; 
+}
+#summary::first-line{
+    font-size: large;
+}
+ul > li{
+    list-style-type: square;
+}
+p#summary{
+    color: tomato;   
+}
+
+
+table{
+    background-image: url(../Python/img.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    text-align: center;
+    font-size: 120%;
+    color: rgba(207, 221, 14, 0.911);
+}
+
+form > p{
+    font-family: 'Pacifico',cursive;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: 15px;
+}
+
+ul+hr+p{
+    text-decoration: solid underline;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1.5;
+    text-indent: 2ch;
+    word-spacing: 25;
+    text-shadow: 2px 2px 3px black;
+}
+
+h1{
+    text-shadow: 3px 3px 3px rgb(26, 117, 26);
+    border: 10px solid green;
+    margin: 5px 2px 5px 2px;
+}

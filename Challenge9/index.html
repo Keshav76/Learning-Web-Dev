@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 9</title>
+    <style>
+        *{
+            margin: 0%;
+            color: black;
+            font-size: x-large;
+            text-align: center;
+        }
+        #container1{
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            grid-auto-rows: 700px;
+            grid-gap: 10px;
+        }
+        #container2{
+            display: grid;
+            grid-template-rows: 2fr 10fr 1fr;
+            grid-gap: 10px;
+        }
+        #container3{
+            grid-gap: 10px;
+            display: grid;
+        	grid-template-columns: 5fr 1fr;
+        }
+        .items, .inner-items, .inner-inner-items{
+            background-color: rgb(250,216,75);
+        }
+    </style>
+</head>
+<body>
+    <div id="container1">
+        <div class="items">Nav</div>
+        <div id="container2">
+            	<div class="inner-items">Header</div>
+                <div id="container3">
+                    	<div class="inner-inner-items">Main</div>
+                        <div class="inner-inner-items">Ads</div>
+                </div>
+                <div class="inner-items">Footer</div>
+        </div>
+    </div>
+</body>
+</html>

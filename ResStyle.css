@@ -1,0 +1,16 @@
+body, a{
+    background-color: black;
+    color: beige;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1000px) {
+    a::after{
+        content: " ( " attr(mail-content) " ) ";
+    }
+    a::before{
+        content: url(../Python/img.jpg);
+
+    }
+}

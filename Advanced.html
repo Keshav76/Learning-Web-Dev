@@ -1,0 +1,74 @@
+<!--
+    Flickity for caraousel sliding images       :    copy code  and paste each element of yours in it
+    Font Awesome for icons    :    link it and use class "fa fa-item_name" on an "I" tag
+    Favicon for title logo    :    get a favicon.ico file and link
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--Flickity-->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        .carousel {
+            background: #EEE;
+        }
+
+        .carousel-cell {
+            width: 66%;
+            height: 200px;
+            margin-right: 10px;
+            background: #8C8;
+            border-radius: 5px;
+            counter-increment: carousel-cell;
+        }
+
+        /* cell number */
+        .carousel-cell:before {
+            display: block;
+            text-align: center;
+            content: counter(carousel-cell);
+            line-height: 200px;
+            font-size: 80px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="carousel" data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+    </div>
+    <h1>
+        <i class="fa fa-youtube"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-instagram"></i> 
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-github"></i>
+        <i class="fa fa-android"></i>
+    </h1>
+
+    <!--Flickity JS-->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Payment Form</title>
+</head>
+
+<body>
+    <div class = "container">
+        <h1 style = "text-align: center;">PAYMENT FORM</h1>
+        <hr>
+        <form action="" method="POST">
+            <h2 >Contact Information</h2>
+            <p>Name: <input type="text" name="name" required placeholder="Your Name Here"></p>
+            <fieldset>
+                <legend>Gender</legend>
+                <p>
+                    Male <input type="radio" name="gender" checked required con>
+                    Female <input type="radio" name="gender" required>
+                </p>
+            </fieldset>
+            <p>Address: <textarea name="address" cols="100" rows="2" required placeholder="House Number, Street, Locality, City, State, PIN CODE"></textarea></p>
+            <p>Email: <input type="email" name="email" required placeholder="example@domain.com"></p>
+            <p>Phone Number: <input type="number" name="phone" placeholder="+910123456789"></p>
+            <hr>
+            <h2>Payment Information</h2>
+            <hr>
+            <p>Card Type:
+                <select name="card_type" required>
+                    <option value="">--Select a card type--</option>
+                    <option value="visa">VISA</option>
+                    <option value="masterCard">Master Card</option>
+                    <option value="rupay">RuPay</option>
+                </select>
+            </p>
+            <p>
+                Card Number: <input type="number" name="cardNumber" required placeholder="1111-2222-3333-4444">
+            </p>
+            <p>
+                Expiry Date: <input type="date" name="expiryDate" required>
+            </p>
+            <p>
+                CVV: <input type="password" name="cvv" required placeholder="1234">
+            </p>
+            <br>
+            <p>
+                <input type="submit" value="Pay Now">
+               
+                <input type="reset" value="Reset">
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

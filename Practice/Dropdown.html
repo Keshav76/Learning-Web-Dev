@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        
+        #dropdown-title,
+        .links {
+            float: left;
+            /* background-color: lightgray; */
+            color: black;
+            padding: 20px;
+            box-sizing: content-box;
+        }
+
+        #dropped {
+            z-index: 100;
+            border-radius: 5%;
+            background-color: gray;
+            color: white;
+            height: 0px;
+            width: 100px;
+            text-align: center;
+            overflow: hidden;
+            transition: height 500ms;
+            position: absolute;
+        }
+
+        #dropdown-title:hover #dropped {
+            transform: translateX(-20px) translateY(5px);
+            height: fit-content;
+        }
+
+        a {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: lightseagreen;
+        }
+
+        body {
+            width: 100%;
+            padding: 0%;
+            background-color: darkgrey;
+            height: 90vh;
+        }
+
+        apna {
+            position: absolute;
+            font-size: 1.4em;
+            transform: translate(-3px, -2px);
+        }
+
+        #fl-r {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <div class="links"><a href="#">Link 1</a></div>
+        <div class="links"><a href="#">Link 2</a></div>
+        <div class="links"><a href="#">Link 3</a></div>
+        <div class="links"><a href="#">Link 4</a></div>
+        <div id="dropdown-title">Dropdown<apna>&dtrif; </apna>
+            <div id="dropped">
+                <a href="#" class="items" id="i1">Item 1</a>
+                <a href="#" class="items" id="i2">Item 2</a>
+                <a href="#" class="items" id="i3">Item 3</a>
+                <a href="#" class="items" id="i4">Item 4</a>
+            </div>
+        </div>
+        <div class="links" id="fl-r"><a href="www.google.com"><strong>&telrec;</strong> Search</a></div>
+    </div>
+</body>
+
+</html>

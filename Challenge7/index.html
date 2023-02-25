@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 7</title>
+    <style>
+        *{
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 900;
+            text-align: center;
+        }
+        body{
+            display: flex;
+            padding: 0%;
+            margin: 0%;
+        }
+
+        div{
+            margin: 0%;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            width: 100%;            
+
+        }
+        .aside{
+            background-color: red;
+            /* height: 100%; */
+            width: 20%;
+        }
+        .header{
+            height: 50px;
+            background-color: blue;
+        }
+        .article{
+            height: 1500px;
+            background-color: green;
+        }
+        .footer{
+            background-color: yellow;
+            height: 50px;
+        }
+        .tx{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="aside tx">Nav</div>
+    <div class="main">
+        <div class="inner header tx">Header</div>
+        <div class="inner article tx">Article</div>
+        <div class="inner footer tx">Footer</div>
+    </div>
+</body>
+</html>

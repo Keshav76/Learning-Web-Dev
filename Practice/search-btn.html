@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is a website meant for shocasing a cool search button">
+    <meta name="keywords" content="search buttin in css, search button, css, website, web development">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Button</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0%;
+            background-color: rgba(223, 223, 46, 0.829);
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        
+        #search-btn{
+            position: fixed;
+            border-radius: 34px;
+            height: 34px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        i{
+            /* transform: translateX(-20px); */
+            color: red;
+            background-color: black;
+            padding: 10px;
+        }
+        input{
+            all: inherit;
+            background-color: black;
+            box-sizing: border-box;
+            color: red;
+            padding: 0px 20px;
+        }
+        input::placeholder{
+            color: red;
+        }
+        #search-bar{
+            height: 34.86px;
+            width: 00px;
+            background-color: white;
+            transition: width 2s;
+        }
+        #search-btn:hover i{
+            color: black;
+            background-color: red;
+        }
+        #search-btn:hover #search-bar{
+            width: unset;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="search-btn">
+        <i class="fa fa-search"></i>
+        <div id="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+    </div>
+    </body>
+
+</html>

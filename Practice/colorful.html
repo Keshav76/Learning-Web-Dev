@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        #underline{
+            color: chartreuse;
+            width: fit-content;
+            font-size: 3em;
+            background-image: linear-gradient(90deg, red, blue);
+            background-size: 0% 5px;
+            background-repeat: no-repeat;
+            background-position: bottom left;    
+            transition: background-size 1s ease;        /*  1s = 1000ms  */
+        }
+        #underline:hover{
+            background-size: 100% 5px;
+        }
+        #text{
+            width: fit-content;
+            color: chartreuse;
+            background-image: linear-gradient(90deg, red, blue);
+            /* background-size: 50%; */
+            background-repeat: no-repeat;
+            font-size: 3em;
+            font-weight: 900;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div id="underline">Gauri</div>
+    <div id="text">Gauri</div>
+</body>
+</html>

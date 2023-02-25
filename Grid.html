@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid-Box</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: 3fr 1fr 2fr;     /* repeat(3, 1fr) => 1fr 1fr 1fr */ 
+            grid-gap: 20px;
+            grid-auto-rows: minmax(40px, auto);    /*height : we can give exact value(it may overflow)*/
+            /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));     it gives responsiveness */
+        }
+        .box{
+            border: 3px solid green;
+            background-color: lightcoral;
+            border-radius: 5px;
+        }
+        #b8{
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        #b7{
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="b1">Dabba 1</div>
+        <div class="box" id="b2">Dabba 2</div>
+        <div class="box" id="b3">Dabba 3</div>
+        <div class="box" id="b4">Dabba 4</div>
+        <div class="box" id="b5">Dabba 5</div>
+        <div class="box" id="b6">Dabba 6</div>
+        <div class="box" id="b7">Dabba 7</div>
+        <div class="box" id="b8">Dabba 8</div>
+        <div class="box" id="b9">Dabba 9</div>
+        <div class="box" id="b10">Dabba 10</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 5</title>
+    <style>
+        body {
+            max-width: 1200px;
+            font-size: 1.5rem;
+            width: 90%;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .topContainer {
+            display: flex;
+        }
+
+        .midContainer {
+            display: flex;
+            justify-content: stretch;
+        }
+
+        .lowContainer {
+            display: flex;
+        }
+
+        .box {
+            width: 100%;
+            border-radius: 5px;
+            background-color: chocolate;
+            padding: 10px;
+            margin: 2px;
+            color: white;
+        }
+
+        .inner-box {
+            color: chocolate;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topContainer">
+        <div class="box" id="b1">
+            1
+            <div class="topContainer">
+                <div class="box inner-box">1</div>
+                <div class="box inner-box">2</div>
+                <div class="box inner-box">3</div>
+            </div>
+            <div class="midContainer">
+                <div class="box inner-box">1</div>
+                <div class="box inner-box">2</div>
+                <div class="box inner-box">3</div>
+                <div class="box inner-box">4</div>
+            </div>
+            <div class="lowContainer">
+                <div class="box inner-box">1</div>
+                <div class="box inner-box">2</div>
+                <div class="box inner-box">3</div>
+                <div class="box inner-box">4</div>
+                <div class="box inner-box">5</div>
+            </div>
+        </div>
+        <div class="box" id="b2">2</div>
+        <div class="box" id="b3">3</div>
+    </div>
+    <div class="midContainer">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div>
+    <div class="lowContainer">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+</body>
+
+</html

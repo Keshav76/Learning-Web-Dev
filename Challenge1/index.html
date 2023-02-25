@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Keshav | Contact</title>
+</head>
+
+<body>
+    <div id="container">
+        <form action="POST">
+            <p id="main_heading">Contact Us</p>
+            <p id="disclaimer">We would love to hear from you! Leave a message below and we will get in touch with you
+                shortly.</p>
+            <p>Name<sup style="color: red;">*</sup> <input type="text" placeholder="John Doe" name="name" required></p>
+            <p>E-Mail<sup style="color: red;">*</sup> <input type="email" placeholder="john@example.com" name="mail"
+                    required></p>
+            <p>Phone<sup style="color: red;">*</sup> <input type="tel" placeholder="123-456-7890" name="phone" required>
+            </p>
+
+
+            <fieldset>
+                <legend>Contact By</legend>
+                <input type="radio" name="method" checked required>E-Mail </input>
+                <input type="radio" name="method" required>Phone </input>
+            </fieldset>
+            <p>Topic <sup style="color: red;">*</sup>
+                <select name="topic" required>
+                    <option value="">--Options--</option>
+                    <option value="Order Placement">Order Placement</option>
+                    <option value="Order Cancel">Order Cancel</option>
+                    <option value="Shipping Enquiry">Shipping Enquiry</option>
+                    <option value="Refund">Refund</option>
+                    <option value="Others">Others</option>
+                </select>
+            </p>
+            <p>
+                Message<sup style="color: red;">*</sup>
+                <textarea name="msg" required placeholder="Your Message here"></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+*{
+    margin: 20px 2px;
+}
+body {
+    background-color: aqua;
+}
+.image-border{
+    height: 100px;
+    width: 300px;
+    border: 20px solid transparent;
+    border-image: url(https://www.w3schools.com/cssref/border.png); 
+    border-image-slice: 30;
+    border-image-repeat: round;
+}
+#jm{
+    caret-color: cornflowerblue;
+}
+.clip-circle{
+    border: 1px solid blue;
+    width: 150px;
+    height: 200px;
+    background-color: brown;
+    clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+}
+.clip-triangle{
+    border: 1px solid blue;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.clip-right-arrow{
+    background-color: brown;
+    height: 100px;
+    width: 100px;
+    clip-path: polygon(0% 30%, 50% 30%, 50% 0%, 100% 50%, 50% 100%, 50% 70%, 0% 70%);
+}
+.clip-trapezium{
+    background-color: brown;
+    height: 50px;
+    width: 100px;
+    clip-path: polygon(20% 0%, 0% 100%, 100% 100%, 80% 0%);
+}
+.clip-house{
+    background-color: brown;
+    height: 200px;
+    width: 200px;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 60%, 80% 60%, 80% 100%, 20% 100%, 20% 60%, 0% 60%);
+}
+.col{
+    height: max-content;
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 2px double green;
+    /* used if column count is not fixed */
+    /* column-width: 100px;  */
+
+    /* columns: 200px 7; */
+}
+.btn{
+    background-color: blue;
+}
+.btn:hover{
+    cursor: grab;
+}
+.btn:active{
+    cursor: grabbing;
+}
+.dir{
+    direction: rtl;
+}
+.ali{
+    text-align: right;
+}
+#baw{
+    filter: grayscale(50%) contrast(150%);
+}

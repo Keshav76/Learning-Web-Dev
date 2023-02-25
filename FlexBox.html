@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .fb {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 500px;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .box {
+            border: 1px solid black;
+            width: 150px;
+            padding: 15px;
+            text-align: center;
+            height: 50px;
+        }
+
+        #b1 {
+            background-color: red;
+        }
+
+        #b2 {
+            background-color: yellow;
+        }
+
+        #b3 {
+            background-color: blue;
+        }
+
+        #b4 {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fb">
+        <!-- FlexBox = fb -->
+        <div class="box" id="b1">Box 1</div>
+        <div class="box" id="b2">Box 2</div>
+        <div class="box" id="b3">Box 3</div>
+        <div class="box" id="b4">Box 4</div>
+    </div>
+</body>
+
+</html>
+
+
+
+
